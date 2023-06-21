@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Estilos para el botón */
+.button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Estilos para la lista */
+.list {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  padding: 5px;
+}
+</style>
+<script>
+function toggleList() {
+  var list = document.getElementById("myList");
+  if (list.style.display === "none") {
+    list.style.display = "block";
+  } else {
+    list.style.display = "none";
+  }
+}
+</script>
+</head>
+<body>
+  <!-- Botón -->
+  <button class="button" onclick="toggleList()">Action ▼</button>
+  
+  <!-- Lista -->
+  <ul id="myList" class="list">
+    <li class="list-item">Elemento 1</li>
+    <li class="list-item">Elemento 2</li>
+    <li class="list-item">Elemento 3</li>
+  </ul>
+<br>
+<br>
+  <body>
+    <!-- Botón -->
+    <button class="button" onclick="toggleList()">ㅤAction ㅤ▼</button>
+    
+    <!-- Lista -->
+    <ul id="myList" class="list">
+      <li class="list-item">Elemento 1</li>
+      <li class="list-item">Elemento 2</li>
+      <li class="list-item">Elemento 3</li>
+    </ul>
+
+    
+</body>
+</html>
